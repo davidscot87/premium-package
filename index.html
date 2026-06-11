@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premier College of Excellence - Shaping Future Leaders with World-Class Education, State-of-the-Art Infrastructure, and 50+ Expert Faculty Members">
+  <meta name="keywords" content="college, education, courses, admission, top college, best faculty, engineering, science, arts">
+  <meta name="author" content="Premier College of Excellence">
+  <meta property="og:title" content="Premier College of Excellence">
+  <meta property="og:description" content="Join 1200+ students in their journey to excellence">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://premiercollege.edu">
+  <meta property="og:image" content="https://premiercollege.edu/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://premiercollege.edu">
+  <meta name="twitter:image" content="https://premiercollege.edu/og-image.jpg">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#1a237e">
+  <title>Premier College of Excellence - Shaping Tomorrow's Leaders</title>
+  <script>
+    // AGGRESSIVE SERVICE WORKER CLEANUP
+    (async function() {
+      if ('serviceWorker' in navigator) {
+        // Get all registrations
+        const registrations = await navigator.serviceWorker.getRegistrations();
+        
+        // Unregister all service workers
+        for (let registration of registrations) {
+          await registration.unregister();
+          console.log('✓ Service Worker unregistered');
+        }
+        
+        // Clear all caches
+        if ('caches' in window) {
+          const cacheNames = await caches.keys();
+          for (let name of cacheNames) {
+            await caches.delete(name);
+            console.log('✓ Cache cleared:', name);
+          }
+        }
+        
+        // Force reload if service worker was active
+        if (registrations.length > 0) {
+          console.log('✓ Service workers removed. Reloading...');
+          setTimeout(() => window.location.reload(), 100);
+        }
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.policy-page { min-height: 100vh; background: #f8fafc; }
+.policy-hero { background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%); padding: 6rem 0 4rem; color: white; text-align: center; }
+.policy-hero svg { margin-bottom: 1.5rem; }
+.policy-hero h1 { font-size: 3rem; font-weight: 700; margin-bottom: 0.5rem; }
+.policy-hero p { font-size: 1.125rem; opacity: 0.9; }
+.policy-content { padding: 4rem 0; }
+.policy-text { max-width: 900px; margin: 0 auto; background: white; padding: 3rem; border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.policy-text h2 { font-size: 1.75rem; color: #1e293b; margin: 2.5rem 0 1rem; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0; }
+.policy-text h2:first-child { margin-top: 0; }
+.policy-text h3 { font-size: 1.25rem; color: #475569; margin: 1.5rem 0 0.75rem; }
+.policy-text p { font-size: 1.05rem; line-height: 1.8; color: #64748b; margin-bottom: 1.25rem; }
+.policy-text ul { margin: 1rem 0 1.5rem 2rem; }
+.policy-text li { font-size: 1.05rem; line-height: 1.8; color: #64748b; margin-bottom: 0.75rem; }
+.sitemap-content { padding: 4rem 0; }
+.sitemap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.sitemap-section { background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.sitemap-section h2 { font-size: 1.5rem; color: #1e293b; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid #e2e8f0; }
+.sitemap-section ul { list-style: none; padding: 0; }
+.sitemap-section li { margin-bottom: 0.75rem; }
+.sitemap-section a { display: flex; align-items: center; gap: 0.5rem; color: #64748b; font-weight: 500; transition: all 0.3s; padding: 0.5rem; border-radius: 8px; }
+.sitemap-section a:hover { color: #1a237e; background: #f8fafc; }
+@media (max-width: 768px) { .policy-hero h1 { font-size: 2rem; } .policy-text { padding: 2rem 1.5rem; } .sitemap-grid { grid-template-columns: 1fr; } }

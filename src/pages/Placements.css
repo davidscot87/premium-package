@@ -1,0 +1,16 @@
+.placements-page { min-height: 100vh; background: #f8fafc; }
+.placements-hero { background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%); padding: 6rem 0 4rem; color: white; text-align: center; }
+.placements-hero h1 { font-size: 3rem; font-weight: 700; margin-bottom: 1rem; }
+.placements-hero p { font-size: 1.25rem; opacity: 0.95; }
+.placement-stats { padding: 3rem 0; background: white; }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+.stat-card { text-align: center; padding: 2rem; background: #f8fafc; border-radius: 16px; }
+.stat-card svg { color: #1a237e; margin-bottom: 1rem; }
+.stat-value { font-size: 2.5rem; font-weight: 700; color: #1e293b; }
+.stat-label { font-size: 1rem; color: #64748b; margin-top: 0.5rem; }
+.recruiters { padding: 4rem 0; }
+.recruiters h2 { font-size: 2.5rem; font-weight: 700; text-align: center; margin-bottom: 3rem; }
+.companies-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 2rem; }
+.company-card { background: white; padding: 2rem; border-radius: 16px; text-align: center; font-weight: 600; font-size: 1.125rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: all 0.3s; }
+.company-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+@media (max-width: 768px) { .placements-hero h1 { font-size: 2rem; } .companies-grid { grid-template-columns: repeat(2, 1fr); } }

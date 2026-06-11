@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+</head>
+<body>
+    <h1>If you see this, the server works!</h1>
+    <p>Now check http://localhost:3001 in your browser</p>
+    <script>
+        console.log('Test page loaded successfully');
+        fetch('http://localhost:3001')
+            .then(r => r.text())
+            .then(html => {
+                console.log('Main app HTML length:', html.length);
+                console.log('Contains root div:', html.includes('id="root"'));
+            });
+    </script>
+</body>
+</html>
